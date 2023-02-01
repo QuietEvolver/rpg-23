@@ -1,10 +1,10 @@
-# _JavaScript Template_
+# _Secrets of Dune RPG_
 
 ## EDIT BEFORE COMMITING
 
-#### By _Ashe Urban & Vera Weikel_
+#### By _Ashe Urban, Vera Weikel, Mesha, Erin Timlin, and Mitchell Gantz_
 
-#### _This project is serving as a template respository for future work_
+#### _This project objective is to further explore and practice using TDD_
 
 ## Technologies Used
 
@@ -19,22 +19,16 @@
 
 ## Description
 
-_This project template was built off of Epicodus' lessons on TDD and js environments_
+_This project was built using the RPG practice prompt_
 
-_As such, there are tests and js files for a triangle and rectangle constructor, these should be updated per project._
-
-_Lesson prompt:_ https://www.learnhowtoprogram.com/intermediate-javascript/test-driven-development-and-environments-with-javascript/basic-project-structure
+_Lesson prompt:_ https://www.learnhowtoprogram.com/intermediate-javascript/test-driven-development-and-environments-with-javascript/haiku-creator-rpg-sudoku-solver-two-day-project-part-1
 
 ## Setup/Installation Requirements
 
 - _Clone or download to your local repository_
-- _Update titles in package.json and webpack.config.js to reflect new project title_
-- _Update README.md with correct project information_
-- _Ensure proper files are disallowed in .gitignore_
-- _git init a new local directory and create a new repository in github_
 - _run npm install_
 - _npm run start to build and launch server_
-- _proceed to update files to reflect new project_
+
 
 ## Known Bugs
 
@@ -44,4 +38,4 @@ _Lesson prompt:_ https://www.learnhowtoprogram.com/intermediate-javascript/test-
 
 _MIT_
 
-Copyright (c) _2023_ _Ashe Urban_ _Vera Weikel_
+Copyright (c) _2023_ _Ashe Urban_ _Vera Weikel_ _Mesha_ _Erin Timlin_ & _Mitchell Gantz_
