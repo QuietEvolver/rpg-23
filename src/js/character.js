@@ -1,7 +1,8 @@
 
 export default class Character {
-  constructor(health) {
+  constructor(health, characterClass) {
     this.health = health;
+    this.characterClass = characterClass;
   }
 
   healthPlusOne() {
@@ -19,5 +20,21 @@ export default class Character {
       return this.health;
     }
   }
-    
+  
+  equipShield() {
+    if(this.health !== 0) {
+      return this.health += 24;
+    } else {
+      return this.health;
+    }
+  }
+
+  takeClass() {
+    if(this.characterClass === "wizard") {
+      return "wizard";
+    } else {
+      return "You are not a wizard";
+    }
+  }
+  
 };
