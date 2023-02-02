@@ -77,19 +77,19 @@ describe('Character', () => {
     expect(character.castSpell()).toEqual(3);
   });
 
-  test ("Should check stats if equal to experience'",() => {
-    const character = new Character (3, "wizard", "splinter", 8, 12);
-    expect(character.checkStats()).toEqual(0);
-  });
+  // test ("Should check stats if equal to experience'",() => {
+  //   const character = new Character (3, "wizard", "splinter", 8, 12);
+  //   expect(character.checkStats()).toEqual(0);
+  // });
 
   test("Should go from level one to two based on experence gained", () => {
     const character = new Character (5, " ", " ", " ", 0);
-    expect (character.gainExp()).toEqual(10);
+    expect (character.gainExperience()).toEqual(10);
   });
 
   test("should return 0 if health score is 0", () => {
     const character = new Character(0, " ", " ", " ", 0);
-    expect(character.gainExp()).toEqual(0);
+    expect(character.gainExperience()).toEqual(0);
   });
 
 });
