@@ -1,10 +1,11 @@
 export default class Character {
-  constructor(health, characterType, spellType, age, gainExp) {
+  constructor(health, characterType, spellType, age, gainExp, realm) {
     this.health = health;
     this.characterType = characterType;
     this.spellType = spellType;
     this.age = age;
     this.gainExp = gainExp;
+    this.realm = realm;
   }
 
   healthPlusOne() {
@@ -69,11 +70,10 @@ export default class Character {
   }
 
   realmAge() {
-    if(this.health !== 0 && this.age === 32) {
+    if(this.health !== 0 && this.realm === "epicodus") {
       return this.age += 14;
     } else {
       return this.age;
     }
-
   }
 };
