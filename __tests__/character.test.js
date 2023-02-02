@@ -75,6 +75,11 @@ describe('Character', () => {
   test ("Should divide health by four if equivalent to 'splinter'",() => {
     const character = new Character (12, "wizard", "splinter", 8);
     expect(character.castSpell()).toEqual(3);
-  })
+  });
+
+  test ("Should check stats if equal to experience'",() => {
+    const character = new Character (3, "wizard", "splinter", 8, 12);
+    expect(character.checkStats()).toEqual(0);
+  });
 
 });
