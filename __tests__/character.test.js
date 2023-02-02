@@ -42,4 +42,9 @@ describe('Character', () => {
     expect(character.takeClass()).toEqual("wizard");
   });
 
+  test("should return 'not a wizard' if character class is not wizard",() => {
+    const character = new Character(0, "druid");
+    expect(character.takeClass()).toEqual("You are not a wizard");
+  });
+
 });
