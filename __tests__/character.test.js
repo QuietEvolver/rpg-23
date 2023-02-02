@@ -68,7 +68,7 @@ describe('Character', () => {
   });
 
   test("Should multiply age by three if equivalent to 'aging'", () => {
-    const character = new Character(1, "wizard", "necromancy", 2);
+    const character = new Character(1, "wizard", "aging", 2);
     expect(character.castSpell()).toEqual(6);
   })
 
