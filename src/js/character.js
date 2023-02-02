@@ -1,9 +1,10 @@
 export default class Character {
-  constructor(health, characterType, spellType, age) {
+  constructor(health, characterType, spellType, age, experience) {
     this.health = health;
     this.characterType = characterType;
     this.spellType = spellType;
     this.age = age;
+    this.experience = experience;
   }
 
   healthPlusOne() {
@@ -55,8 +56,8 @@ export default class Character {
   }
 
   checkStats() { 
-    // if(this.health !== 0 && this.spellType === "necromancy") {
-    //   return this.health -= 5;
+      const exp = this.experience % 2;
+      return exp;
     // } else if (this.spellType === "aging") {
     //   return this.age * 3;
     // } else if (this.spellType === "splinter") {
