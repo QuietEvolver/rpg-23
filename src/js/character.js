@@ -1,7 +1,8 @@
 export default class Character {
-  constructor(health, characterType) {
+  constructor(health, characterType, spellType) {
     this.health = health;
     this.characterType = characterType;
+    this.spellType = spellType;
   }
 
   healthPlusOne() {
@@ -40,13 +41,14 @@ export default class Character {
     }
   }
 
-  castSpell() {
-  //   if(this.spellType === "necromancy") {
-  //     return this.health -= 5;
+  castSpell() { 
+    if(this.health !== 0 && this.spellType === "necromancy") {
+      return this.health -= 5;
+    } else {
+      return this.health;
+    }
   //   } else if(this.spellType === "aging") {
   //     return this.age * 3;
   //   }
   }
-  
-  
 };
