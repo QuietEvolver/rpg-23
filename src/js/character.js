@@ -53,4 +53,16 @@ export default class Character {
       return this.health;
     } 
   }
+
+  checkStats() { 
+    // if(this.health !== 0 && this.spellType === "necromancy") {
+    //   return this.health -= 5;
+    // } else if (this.spellType === "aging") {
+    //   return this.age * 3;
+    // } else if (this.spellType === "splinter") {
+    //   return this.health / 4;
+    // } else {
+    //   return this.health;
+    // } 
+  }
 };
