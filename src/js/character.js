@@ -67,4 +67,8 @@ export default class Character {
       return this.gainExp;
     }
   }
+
+  realmAge() {
+    
+  }
 };
