@@ -1,8 +1,7 @@
-
 export default class Character {
-  constructor(health, characterClass) {
+  constructor(health, characterType) {
     this.health = health;
-    this.characterClass = characterClass;
+    this.characterType = characterType;
   }
 
   healthPlusOne() {
@@ -29,16 +28,25 @@ export default class Character {
     }
   }
 
-  takeClass() {
-    if(this.characterClass === "wizard") {
+  takeType() {
+    if(this.characterType === "wizard") {
       return "wizard";
-    } else if(this.characterClass === "druid") { 
+    } else if(this.characterType === "druid") { 
       return "druid";
-    } else if(this.characterClass === "warrior") {
+    } else if(this.characterType === "warrior") {
       return "warrior";
     } else {
       return "It's too dangerous to go alone, pick a class";
     }
   }
+
+  castSpell() {
+  //   if(this.spellType === "necromancy") {
+  //     return this.health -= 5;
+  //   } else if(this.spellType === "aging") {
+  //     return this.age * 3;
+  //   }
+  }
+  
   
 };
