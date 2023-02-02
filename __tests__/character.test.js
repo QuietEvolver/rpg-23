@@ -82,4 +82,14 @@ describe('Character', () => {
     expect(character.checkStats()).toEqual(0);
   });
 
+  test("Should go from level one to two based on experence gained", () => {
+    const character = new Character (5, " ", " ", " ", 0);
+    expect (character.gainExp()).toEqual(10);
+  });
+
+  test("should return 0 if health score is 0", () => {
+    const character = new Character(0, " ", " ", " ", 0);
+    expect(character.gainExp()).toEqual(0);
+  });
+
 });
