@@ -1,7 +1,5 @@
 # _Secrets of Dune RPG_
 
-## EDIT BEFORE COMMITING
-
 #### By _Ashe Urban, Vera Weikel, Mesha, Erin Timlin, and Mitchell Gantz_
 
 #### _This project objective is to further explore and practice using TDD_
