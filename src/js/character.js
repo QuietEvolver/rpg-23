@@ -69,6 +69,11 @@ export default class Character {
   }
 
   realmAge() {
-    
+    if(this.health !== 0 && this.age === 32) {
+      return this.age += 14;
+    } else {
+      return this.age;
+    }
+
   }
 };
