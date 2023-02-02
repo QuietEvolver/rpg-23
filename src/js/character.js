@@ -32,8 +32,12 @@ export default class Character {
   takeClass() {
     if(this.characterClass === "wizard") {
       return "wizard";
+    } else if(this.characterClass === "druid") { 
+      return "druid";
+    } else if(this.characterClass === "warrior") {
+      return "warrior";
     } else {
-      return "You are not a wizard";
+      return "It's too dangerous to go alone, pick a class";
     }
   }
   
