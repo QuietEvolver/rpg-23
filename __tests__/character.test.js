@@ -93,12 +93,12 @@ describe('Character', () => {
   });
 
   test("should return age plus 14 when character enters the Epicodus realm", () => {
-    const character = new Character(10, " ", " ", 32, " ");
+    const character = new Character(10, " ", " ", 32, " ", "epicodus");
     expect(character.realmAge()).toEqual(46);
   });
 
   test("should return 0 if health score is 0", () => {
-    const character = new Character(0, " ", " ", 0 , " ");
+    const character = new Character(0, " ", " ", 0 , " ", "epicodus");
     expect(character.realmAge()).toEqual(0);
   });
 
