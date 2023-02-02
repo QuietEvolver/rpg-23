@@ -39,22 +39,26 @@ describe('Character', () => {
 
   test("should add character class to character object", () => {
     const character = new Character(0, "wizard");
-    expect(character.takeClass()).toEqual("wizard");
+    expect(character.takeType()).toEqual("wizard");
   });
 
   test("should return 'not a wizard' if character class is not wizard",() => {
     const character = new Character(0, " ");
-    expect(character.takeClass()).toEqual("It's too dangerous to go alone, pick a class");
+    expect(character.takeType()).toEqual("It's too dangerous to go alone, pick a class");
   });
 
   test("should add character class 'druid' to character object", () => {
     const character = new Character(0, "druid");
-    expect(character.takeClass()).toEqual("druid");
+    expect(character.takeType()).toEqual("druid");
   });
 
   test("should add character class 'warrior' to character object",() => {
     const character = new Character(0, "warrior");
-    expect(character.takeClass()).toEqual("warrior");
+    expect(character.takeType()).toEqual("warrior");
   });
 
+  test("should return minus 5 health if necromancy spell cast",() => {
+    const character = new Character(10);
+    expect(character.castSpell()).toEqual(5);
+  });
 });
