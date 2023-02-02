@@ -59,6 +59,12 @@ describe('Character', () => {
 
   test("should return minus 5 health if necromancy spell cast",() => {
     const character = new Character(10, "wizard", "necromancy");
-    expect(character.castSpell()).toEqual(5);
+    expect(character.castSpell()).toEqual(5, "wizard", "necromancy");
   });
+
+  test("should return 0 if health score is 0", () => {
+    const character = new Character(0, "wizard", "necromancy");
+    expect(character.castSpell()).toEqual(0);
+  });
+
 });
