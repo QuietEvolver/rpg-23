@@ -97,4 +97,9 @@ describe('Character', () => {
     expect(character.realmAge()).toEqual(46);
   });
 
+  test("should return 0 if health score is 0", () => {
+    const character = new Character(0, " ", " ", 0 , " ");
+    expect(character.realmAge()).toEqual(0);
+  });
+
 });
