@@ -1,10 +1,10 @@
 export default class Character {
-  constructor(health, characterType, spellType, age, experience) {
+  constructor(health, characterType, spellType, age, gainExp) {
     this.health = health;
     this.characterType = characterType;
     this.spellType = spellType;
     this.age = age;
-    this.experience = experience;
+    this.gainExp = gainExp;
   }
 
   healthPlusOne() {
@@ -55,15 +55,14 @@ export default class Character {
     } 
   }
 
-  checkStats() { 
-      const exp = this.experience % 2;
-      return exp;
-    // } else if (this.spellType === "aging") {
-    //   return this.age * 3;
-    // } else if (this.spellType === "splinter") {
-    //   return this.health / 4;
-    // } else {
-    //   return this.health;
-    // } 
+  // checkStats() { 
+  //     const exp = this.experience % 2;
+  //     return exp;
+  // }
+
+  gainExp () {
+    if(this.health !== 0 && this.gainExp === 0) {
+      return this.gainExp += 10;
+    }
   }
 };
