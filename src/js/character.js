@@ -60,9 +60,11 @@ export default class Character {
   //     return exp;
   // }
 
-  gainExp () {
+  gainExperience() {
     if(this.health !== 0 && this.gainExp === 0) {
       return this.gainExp += 10;
+    } else {
+      return this.gainExp;
     }
   }
 };
