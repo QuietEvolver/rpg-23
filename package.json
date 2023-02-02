@@ -1,5 +1,5 @@
 {
-  "name": "Secrets of Dune",
+  "name": "Secrets-of-Dune",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,7 +9,6 @@
     "lint": "eslint src/*.js",
     "test": "jest --coverage"
   },
-
   "keywords": [],
   "author": "",
   "license": "ISC",
