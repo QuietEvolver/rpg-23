@@ -72,6 +72,15 @@ export default class Character {
   realmAge() {
     if(this.health !== 0 && this.realm === "epicodus") {
       return this.age += 14;
+    } else if (this.health !== 0 && this.realm === "brainSap") {
+      return ((this.age * 2) && (this.health / 2));
+   // }  qualifiers
+    // cond eval1
+    // cond eval2 - this.x
+    
+    // set up in one var
+    // ret
+
     } else {
       return this.age;
     }
