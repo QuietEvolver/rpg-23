@@ -102,4 +102,9 @@ describe('Character', () => {
     expect(character.realmAge()).toEqual(0);
   });
 
+  test("should return age multiplied by 2 and health divided by 2 when character enters brainSap realm", () => {
+    const character = new Character(10, " ", " ", 10, "", "brainSap");
+    expect(character.realmAge()).toEqual(5, 100);
+  })
+
 });
